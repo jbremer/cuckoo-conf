@@ -29,24 +29,31 @@ def foreach_child(hwnd, lparam):
     buttons = [
         "yes", "oui",
         "ok",
-        "accept", "accepter",
+        "i accept",
         "next", "suivant",
+        "new", "nouveau",
         "install", "installer",
-        "run",
-        "agree", "j'accepte",
-        "enable", "activer",
+        "file", "fichier",
+        "run", "start", "marrer", "cuter",
+        "i agree", "accepte",
+        "enable", "activer", "accord", "valider",
         "don't send", "ne pas envoyer",
         "continue", "continuer",
+        "personal", "personnel",
+        "scan", "scanner",
         "unzip", "dezip",
         "open", "ouvrir",
         "execute", "executer",
         "launch", "lancer",
-        "save", "sauvegarder"
+        "save", "sauvegarder",
+        "download", "load", "charger",
+        "end", "fin", "terminer"
     ]
 
     # List of buttons labels to not click.
     dontclick = [
         "don't run",
+        "i do not accept"
     ]
 
     classname = create_unicode_buffer(50)
